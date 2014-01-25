@@ -24,4 +24,8 @@ Code: https://github.com/springinpractice
         <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
                 p:prefix="/WEB-INF/jsp/"
                 p:suffix=".jsp"/>
+                
+      	<bean name="/nominee/*"
+      		class="com.springinpractice.ch03.web.NomineeController"
+			p:thanksViewName="nominee/thanks"/>
 </beans>
